@@ -1,3 +1,8 @@
-#!/usr/bin/env bash
-# Allows us to connect to my server using the private key with user ubuntu
-ssh -i ~/.ssh/id_rsa ubuntu@54.209.120.1
+#!/bin/bash
+
+#Define variables server_address="54.160.65.49" P
+private_key="~/.ssh/school"
+user="ubuntu"
+
+#Connect to the server using SSH
+ssh -i"$private_key" "$user"@"$server_address"
